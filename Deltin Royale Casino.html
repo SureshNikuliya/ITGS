@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Deltin Royale Casino</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	<style>
+	#floating-panel {
+        position: relative;
+        bottom:10%;
+        left: 25%;
+        z-index: 10;
+        background-color: #fff;
+        padding: 10px;
+        border: 2px solid #999;
+        text-align: center;
+        font-family: Consolas;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #btn {
+      	position: relative;
+      	left:40%;
+      }
+	</style>
+	</head>
+	<body class="no-sidebar" onload="getLocation()">
+		<script type="text/javascript">
+			
+		  var xx;
+          var yy;
+          function getLocation() {
+              if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+              } 
+              else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+          }
+
+            function showPosition(position) {
+              xx = position.coords.latitude;
+              yy = position.coords.longitude;
+              alert("Direction from your current location to this place is available.");
+
+              
+            }
+            function getdirection() {
+            	window.location.href = "https://www.google.co.in/maps/dir/" + xx +","+ yy +"/"+ "15.5006" +","+ "73.8313" ;
+
+            }
+
+     </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRZ8di7cKfG8IXF3Fn5U80gOysHZDP9wg">
+    </script>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="home.php" id="logo">ITGS</a></h1>
+							</header>
+						</div>
+
+				</div>
+				
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<p>
+									<strong>Deltin Royale Casino: Try Your Luck</strong>
+								</p>
+							</header>
+							<a href="Deltin Royale Casino.html" class="image featured"><img src="images/Deltin Royale Casino.jpg" alt="" /></a>
+							<button   id="btn" onclick="getdirection()">GET DIRECTION ON MAP</button>
+							
+							<p>
+								The Deltin Royale Casino boat is the largest casino boat in Panjim, Goa. It offers 24 hours of nonstop fun in an area spread over 40,000sq.ft of luxury live gaming on three levels with 850 gaming positions. Live entertainment is on the restaurant floor and during peak hours. You need to buy an entry and play package to gain access to the casino. You can also choose to buy a stay and play package which lets you stay at the Deltin hotel and access to the casino as well. For those travelling during national holidays, the casino is closed on all national holidays.
+							</p>
+							
+						</article>
+						<hr />
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				
+				<div id="footer">
+					<div class="container">
+						
+						<div class="row">
+							<div class="12u">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>ITGS</h3>
+										</header>
+										<p></p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy;. All rights reserved.</li><li>Design: <a href="http://masterdevlopers.com">MasaterDevlopers</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

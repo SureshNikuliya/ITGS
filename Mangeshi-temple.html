@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mangeshi-temple</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	<style>
+	#floating-panel {
+        position: relative;
+        bottom:10%;
+        left: 25%;
+        z-index: 10;
+        background-color: #fff;
+        padding: 10px;
+        border: 2px solid #999;
+        text-align: center;
+        font-family: Consolas;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #btn {
+      	position: relative;
+      	left:40%;
+      }
+	</style>
+	</head>
+	<body class="no-sidebar" onload="getLocation()">
+		<script type="text/javascript">
+			
+		  var xx;
+          var yy;
+          function getLocation() {
+              if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+              } 
+              else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+          }
+
+            function showPosition(position) {
+              xx = position.coords.latitude;
+              yy = position.coords.longitude;
+              alert("Direction from your current location to this place is available.");
+
+              
+            }
+            function getdirection() {
+            	window.location.href = "https://www.google.co.in/maps/dir/" + xx +","+ yy +"/"+ "15.4454" +","+ "73.9669" ;
+
+            }
+
+     </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRZ8di7cKfG8IXF3Fn5U80gOysHZDP9wg">
+    </script>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="home.php" id="logo">ITGS</a></h1>
+							</header>
+						</div>
+
+				</div>
+				
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<p>
+									<strong>Mangeshi Temple: Seek Some Divine Intervention</strong>
+								</p>
+							</header>
+							<a href="Mangeshi-temple.html" class="image featured"><img src="images/Mangeshi-temple.png" alt="" /></a>
+							<button   id="btn" onclick="getdirection()">GET DIRECTION ON MAP</button>
+							
+							<p>
+								Goa may have a long Portuguese history and quite a few famous churches, yet it is also home to beautiful temples and ornate mosques as well. Ponda region in Goa is famous for the 16th century Safa Shahouri Mosque as well as the 450-year-old Shri Mangesh temple dedicated to Shiva. The highlights of the temple are the seven-story lamp tower (deepstambha), a magnificent water tank, believed to be the oldest part of the temple and there is a prominent Nandi Bull as well inside the temple. Located on a small hillock, it is also one of the largest temples in Goa. Because of its temples and churches, Goa is also a popular tourist destinations in India for religious travel.
+							</p>
+						</article>
+						<hr />
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				
+				<div id="footer">
+					<div class="container">
+						
+						<div class="row">
+							<div class="12u">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>ITGS</h3>
+										</header>
+										<p></p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy;. All rights reserved.</li><li>Design: <a href="http://masterdevlopers.com">MasaterDevlopers</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
